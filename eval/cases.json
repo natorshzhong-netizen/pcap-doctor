@@ -1,0 +1,19 @@
+{
+  "description": "5 个合成场景，每个场景注入了已知故障；expected 是应该命中的 finding code 集合",
+  "cases": [
+    { "scenario": "normal", "expected": [] },
+    { "scenario": "retransmission", "expected": ["tcp_retransmission"] },
+    { "scenario": "connection-refused", "expected": ["tcp_connection_refused"] },
+    { "scenario": "dns-failure", "expected": ["dns_failure", "dns_slow"] },
+    {
+      "scenario": "mixed",
+      "expected": [
+        "tcp_connection_refused",
+        "tcp_retransmission",
+        "dns_failure",
+        "dns_slow",
+        "tcp_zero_window"
+      ]
+    }
+  ]
+}
