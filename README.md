@@ -8,6 +8,8 @@
 
 ![诊断报告](docs/report.png)
 
+> 一步一步操作 + 指标口径 + 面试讲法：[docs/walkthrough.md](docs/walkthrough.md)
+
 ## 它解决什么问题
 
 线上「网站很慢」时，常见的排查方式是打开 Wireshark 按时间排序、肉眼找红色行。这个项目把这一步变成可复现的规则：
